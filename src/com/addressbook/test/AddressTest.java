@@ -4,7 +4,7 @@ import com.addressbook.model.AddressControll;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class AddressBookMain
+public class AddressTest
 {
 	Person person = new Person();
     	Scanner scan = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class AddressBookMain
         	{
             	try
             	{
-                	System.out.println("\nSelect & enter the task you want to do: \n1: Add details \n2: Display details " +"\n3: Edit details \n4: Delete details \n5: Sort by name, city, zipcode or state \n6: Exit");
+                	System.out.println("\nSelect the task : \n1: Add details \n2: Display details " +"\n3: Edit details \n4: Delete details \n5: Sort by name or zipcode  \n6: Exit");
                 	int num = scan.nextInt();
                 	switch (num)
                 	{
@@ -59,7 +59,7 @@ public class AddressBookMain
     	public static void main(String[] args)
     	{
         	System.out.println("<<<<<<<<<===================================>>>>>>\nWelcome to Address Book Program\n<<<<<<<<<<<<<<<=========================================>>>>>>>>>>>>>>>>>>");
-        	AddressBookMain addressBookMain = new AddressBookMain();
-        	addressBookMain.selectTask();
+        	AddressTest addressTest = new AddressTest();
+        	addressTest.selectTask();
     	}
 }
